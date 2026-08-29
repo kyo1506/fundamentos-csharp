@@ -4,19 +4,23 @@
 
 ## 📋 Sobre o Projeto
 
-Este repositório faz parte de um plano de estudos de 4 semanas para aprofundar conhecimentos em:
+Este repositório faz parte de um plano de estudos de 4 semanas. Cada semana tem
+**teoria**, **prática**, **projeto integrador** (app) e **desafios** entregues via
+Pull Request para code review.
 
-- **Semana 1:** Stack vs Heap, Tipos por Valor vs Referência, Boxing/Unboxing
-- **Semana 2:** Pilares da OO (Encapsulamento, Herança, Polimorfismo, Abstração) + SOLID
-- **Semana 3:** Coleções, Generics, LINQ
-- **Semana 4:** ASP.NET Core Minimal API + Deploy em Nuvem
+| Semana | Tema | Entregável (aplicação) |
+|--------|------|------------------------|
+| **1** | Memória, Tipos e a Base de Tudo (Stack vs Heap, Value vs Reference, Boxing/Unboxing) | `Semana01.ControleEstoque` (console) |
+| **2** | Programação Orientada a Objetos (pilares + SOLID) | `Semana02.ValidadorFormulario` (console) |
+| **3** | Coleções, Generics e LINQ | `Semana03.AnaliseDados` (console) |
+| **4** | ASP.NET Core Minimal API + Deploy | `Semana04.APIControleEstoque` (console + testes) |
 
 ## 🚀 Como Usar
 
 ### Pré-requisitos
 
-- [.NET 8 SDK](https://dotnet.microsoft.com/download)
-- [Visual Studio Code](https://code.visualstudio.com/) ou [JetBrains Rider](https://www.jetbrains.com/rider/)
+- [.NET 10 SDK](https://dotnet.microsoft.com/download)
+- Editor: [VS Code](https://code.visualstudio.com/), [Rider](https://www.jetbrains.com/rider/) ou Visual Studio
 - [Git](https://git-scm.com/)
 
 ### Estrutura do Repositório
@@ -24,53 +28,53 @@ Este repositório faz parte de um plano de estudos de 4 semanas para aprofundar 
 ```
 fundamentos-csharp/
 ├── .github/
-│   └── workflows/
-│       └── deploy.yml      # CI/CD com GitHub Actions
+│   ├── pull_request_template.md   # Template de PR para code review
+│   └── workflows/ci.yml           # CI: build + testes (GitHub Actions)
 ├── Semana-01/
-│   ├── teoria/             # Anotações e resumos teóricos
-│   ├── praticas/           # Exemplos práticos contextualizados
-│   ├── aplicacao/          # Projeto integrador da semana
-│   └── desafios-semanais/  # Exercícios resolvidos
-├── Semana-02/
+│   ├── teoria/                    # Anotações e resumos teóricos
+│   ├── praticas/                  # Exemplos práticos contextualizados
+│   ├── aplicacao/                 # Projeto integrador da semana
+│   ├── aplicacao.Tests/           # Testes unitários (xUnit)
+│   └── desafios-semanais/         # Exercícios resolvidos
+├── Semana-02/                     # (mesma estrutura)
 ├── Semana-03/
 ├── Semana-04/
-└── docs/                   # Documentação adicional
+├── FundamentosCSharp.slnx         # Solução .NET
+└── docs/
 ```
 
 ### Executar Localmente
 
 ```bash
-# Clonar o repositório
-git clone https://github.com/USUARIO/fundamentos-csharp.git
+git clone https://github.com/kyo1506/fundamentos-csharp.git
 cd fundamentos-csharp
 
-# Restaurar dependências
-dotnet restore
+# Restaurar e compilar a solução
+dotnet restore FundamentosCSharp.slnx
+dotnet build FundamentosCSharp.slnx
 
-# Executar projeto da Semana 1
+# Executar os testes de todas as semanas
+dotnet test FundamentosCSharp.slnx
+
+# Executar o projeto da semana desejada
 dotnet run --project Semana-01/aplicacao/Semana01.ControleEstoque.csproj
-
-# Executar testes
-dotnet test
 ```
-
-## 📅 Cronograma de Estudos
-
-| Semana | Tema | Status |
-|--------|------|--------|
-| 1 | Memória, Tipos e a Base de Tudo | 🔄 Em andamento |
-| 2 | Programação Orientada a Objetos | ⏳ Pendente |
-| 3 | Coleções, LINQ e Manipulação de Dados | ⏳ Pendente |
-| 4 | APIs, Persistência e Deploy | ⏳ Pendente |
 
 ## 🎯 Metodologia TEAP
 
 Cada sessão de estudo segue 4 etapas:
 
-1. **T — Teoria Sucinta:** Conceito explicado de forma direta, com diagramas
-2. **E — Exemplo Contextualizado:** Código real (automação, validação, APIs)
-3. **A — Aplicação em Projeto:** Adaptação do exemplo para o projeto integrador
-4. **P — Problema para Resolver:** Desafio entregue via PR para code review
+1. **T — Teoria Sucinta:** conceito explicado de forma direta, com diagramas
+2. **E — Exemplo Contextualizado:** código real (automação, validação, APIs)
+3. **A — Aplicação em Projeto:** adaptação do exemplo para o projeto integrador
+4. **P — Problema para Resolver:** desafio entregue via PR para code review
+
+## 🔁 CI/CD
+
+O repositório usa **GitHub Actions** (`ci.yml`) para rodar **build + testes** em cada
+push/PR para `main`. Como os entregáveis são revisados por PR, o CI garante que o código
+compila e passa nos testes antes do review — o revisor foca na qualidade, não na compilação.
+Não há deploy automático (repositório de estudos).
 
 ## 📝 Code Review
 
@@ -79,8 +83,10 @@ Ao final de cada semana:
 1. Criar uma branch `semana-XX`
 2. Subir todos os entregáveis
 3. Abrir Pull Request para `main`
-4. Preencher template do PR com o que aprendeu e dúvidas
+4. Preencher o template do PR com o que aprendeu e dúvidas
 5. Aguardar review do mentor
+
+> ⚠️ A branch padrão é `main` (a antiga `master` foi removida).
 
 ## 🔗 Recursos Úteis
 

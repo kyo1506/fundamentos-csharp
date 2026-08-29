@@ -1,0 +1,32 @@
+name: CI
+
+# Valida build e testes em cada push/PR para a main.
+# É um repositório de estudos com code review via PR: o CI garante que
+# os entregáveis das 4 semanas compilam e passam nos testes automaticamente,
+# para que o revisor se concentre na qualidade do código.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore FundamentosCSharp.slnx
+
+      - name: Build
+        run: dotnet build FundamentosCSharp.slnx --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test FundamentosCSharp.slnx --configuration Release --no-build

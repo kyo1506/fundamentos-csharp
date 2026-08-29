@@ -34,10 +34,10 @@ public enum TipoNotificacao
 
 public class Participante
 {
-    private string _nome;
-    private string _cpf;
-    private string _email;
-    private string _telefone;
+    private string _nome = string.Empty;
+    private string _cpf = string.Empty;
+    private string _email = string.Empty;
+    private string _telefone = string.Empty;
     private int _idade;
     
     public string Nome
@@ -224,8 +224,7 @@ public class ValidadorIdade : IValidador<int>
 public class RepositorioMemoria<T> : IRepositorio<T> where T : class
 {
     private readonly List<T> _items = new();
-    private int _proximoId = 1;
-    
+
     public void Adicionar(T item) => _items.Add(item);
     public void Remover(int id) => _items.RemoveAt(id - 1);
     public T? Buscar(int id) => id > 0 && id <= _items.Count ? _items[id - 1] : null;

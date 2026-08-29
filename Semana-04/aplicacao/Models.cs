@@ -38,7 +38,7 @@ public record ApiResponse<T>(
     T? Dado
 )
 {
-    public static ApiResponse<T> Ok(T dado, string mensagem = "Sucesso") =>
+    public static ApiResponse<T> Ok(T? dado, string mensagem = "Sucesso") =>
         new(true, mensagem, dado);
     
     public static ApiResponse<T> Erro(string mensagem) =>

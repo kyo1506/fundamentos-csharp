@@ -34,13 +34,13 @@ public class Venda
 {
     public int Id { get; set; }
     public int ProdutoId { get; set; }
-    public string ProdutoNome { get; set; }
+    public string ProdutoNome { get; set; } = string.Empty;
     public CategoriaProduto Categoria { get; set; }
     public int Quantidade { get; set; }
     public decimal ValorUnitario { get; set; }
     public decimal ValorTotal => Quantidade * ValorUnitario;
     public DateTime Data { get; set; }
-    public string Cliente { get; set; }
+    public string Cliente { get; set; } = string.Empty;
 }
 
 // ============================================
