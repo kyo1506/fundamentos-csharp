@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/Semana-01/" />
+  <Folder Name="/Semana-01/aplicacao.Tests/">
+    <Project Path="Semana-01/aplicacao.Tests/Semana01.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Semana-01/aplicacao/">
+    <Project Path="Semana-01/aplicacao/Semana01.ControleEstoque.csproj" />
+  </Folder>
+  <Folder Name="/Semana-02/" />
+  <Folder Name="/Semana-02/aplicacao.Tests/">
+    <Project Path="Semana-02/aplicacao.Tests/Semana02.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Semana-02/aplicacao/">
+    <Project Path="Semana-02/aplicacao/Semana02.ValidadorFormulario.csproj" />
+  </Folder>
+  <Folder Name="/Semana-03/" />
+  <Folder Name="/Semana-03/aplicacao.Tests/">
+    <Project Path="Semana-03/aplicacao.Tests/Semana03.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Semana-03/aplicacao/">
+    <Project Path="Semana-03/aplicacao/Semana03.AnaliseDados.csproj" />
+  </Folder>
+  <Folder Name="/Semana-04/" />
+  <Folder Name="/Semana-04/aplicacao.Tests/">
+    <Project Path="Semana-04/aplicacao.Tests/Semana04.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Semana-04/aplicacao/">
+    <Project Path="Semana-04/aplicacao/Semana04.APIControleEstoque.csproj" />
+  </Folder>
+</Solution>
