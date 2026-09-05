@@ -1,87 +1,81 @@
-# Fundamentos do C# (.NET) — Plano de Estudos Guiado
+# Fundamentos do C# (.NET) — Curso Guiado do Básico ao Avançado
 
-> Repositório de estudos para consolidar fundamentos de C# e .NET com foco em tipos por valor/referência, pilares da OO, coleções, LINQ e APIs.
+> Curso de programação em C# e .NET do zero ao avançado, organizado em **Fases**.
+> Veja o roadmap completo em [`CURRICULO.md`](CURRICULO.md).
 
 ## 📋 Sobre o Projeto
 
-Este repositório faz parte de um plano de estudos de 4 semanas. Cada semana tem
-**teoria**, **prática**, **projeto integrador** (app) e **desafios** entregues via
-Pull Request para code review.
+Um curso progressivo e didático para aprender C# e o ecossistema .NET **na prática**.
+Cada **Fase** contém **teoria** (Markdown), **exemplos práticos**, um **projeto integrador**
+(console) com **testes xUnit** e **exercícios/desafios** entregues por Pull Request
+para code review.
 
-| Semana | Tema | Entregável (aplicação) |
-|--------|------|------------------------|
-| **1** | Memória, Tipos e a Base de Tudo (Stack vs Heap, Value vs Reference, Boxing/Unboxing) | `Semana01.ControleEstoque` (console) |
-| **2** | Programação Orientada a Objetos (pilares + SOLID) | `Semana02.ValidadorFormulario` (console) |
-| **3** | Coleções, Generics e LINQ | `Semana03.AnaliseDados` (console) |
-| **4** | ASP.NET Core Minimal API + Deploy | `Semana04.APIControleEstoque` (console + testes) |
+| Fase | Conteúdo | Entregável |
+|------|----------|------------|
+| **00** | Fundamentos da Programação (lógica com C#) | `LogicaEmAcao` (console) |
+| **01** | C# Básico em profundidade (tipos/memória/coleções/strings) | console |
+| **02** | Programação Orientada a Objetos + SOLID | console |
+| **03** | Coleções avançadas, Delegados, Eventos, Generics, LINQ | console |
+| **04** | .NET Runtime & BCL (IO, JSON, async, threads) | CLI |
+| **05** | Arquitetura, Padrões, DI e Testes | lib + testes |
+| **06** | Aplicações Web e Serviços | API REST |
+| **07** | Tópicos Avançados & Performance | lib + benchmarks |
 
 ## 🚀 Como Usar
 
 ### Pré-requisitos
-
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
 - Editor: [VS Code](https://code.visualstudio.com/), [Rider](https://www.jetbrains.com/rider/) ou Visual Studio
 - [Git](https://git-scm.com/)
 
 ### Estrutura do Repositório
-
 ```
 fundamentos-csharp/
 ├── .github/
 │   ├── pull_request_template.md   # Template de PR para code review
-│   └── workflows/ci.yml           # CI: build + testes (GitHub Actions)
-├── Semana-01/
-│   ├── teoria/                    # Anotações e resumos teóricos
-│   ├── praticas/                  # Exemplos práticos contextualizados
-│   ├── aplicacao/                 # Projeto integrador da semana
-│   ├── aplicacao.Tests/           # Testes unitários (xUnit)
-│   └── desafios-semanais/         # Exercícios resolvidos
-├── Semana-02/                     # (mesma estrutura)
-├── Semana-03/
-├── Semana-04/
+│   └── workflows/ci.yml           # CI: build + testes
+├── Fase-00-Fundamentos-da-Programacao/
+│   ├── teoria/                    # Aulas em Markdown
+│   ├── aplicacao/                 # Projeto console (LogicaEmAcao)
+│   ├── aplicacao.Tests/           # Testes xUnit
+│   └── README.md                  # Guia da fase
+├── Fase-01-.../                   # (próximas fases seguem o mesmo padrão)
+├── CURRICULO.md                   # Roadmap completo
 ├── FundamentosCSharp.slnx         # Solução .NET
 └── docs/
 ```
 
 ### Executar Localmente
-
 ```bash
 git clone https://github.com/kyo1506/fundamentos-csharp.git
 cd fundamentos-csharp
 
-# Restaurar e compilar a solução
+# Restaurar, compilar e testar a solução
 dotnet restore FundamentosCSharp.slnx
 dotnet build FundamentosCSharp.slnx
-
-# Executar os testes de todas as semanas
 dotnet test FundamentosCSharp.slnx
 
-# Executar o projeto da semana desejada
-dotnet run --project Semana-01/aplicacao/Semana01.ControleEstoque.csproj
+# Executar o projeto da fase desejada
+dotnet run --project Fase-00-Fundamentos-da-Programacao/aplicacao/LogicaEmAcao.csproj
 ```
 
-## 🎯 Metodologia TEAP
+## 🎯 Metodologia (TEAP)
 
 Cada sessão de estudo segue 4 etapas:
-
 1. **T — Teoria Sucinta:** conceito explicado de forma direta, com diagramas
-2. **E — Exemplo Contextualizado:** código real (automação, validação, APIs)
-3. **A — Aplicação em Projeto:** adaptação do exemplo para o projeto integrador
+2. **E — Exemplo Contextualizado:** código real e executável
+3. **A — Aplicação em Projeto:** exemplo aplicado no projeto integrador da fase
 4. **P — Problema para Resolver:** desafio entregue via PR para code review
 
 ## 🔁 CI/CD
+O repositório usa **GitHub Actions** (`ci.yml`) para rodar **build + testes** em cada push/PR
+para `main`. Como os entregáveis são revisados por PR, o CI garante que tudo compila e passa
+nos testes antes do review. Não há deploy automático.
 
-O repositório usa **GitHub Actions** (`ci.yml`) para rodar **build + testes** em cada
-push/PR para `main`. Como os entregáveis são revisados por PR, o CI garante que o código
-compila e passa nos testes antes do review — o revisor foca na qualidade, não na compilação.
-Não há deploy automático (repositório de estudos).
-
-## 📝 Code Review
-
-Ao final de cada semana:
-
-1. Criar uma branch `semana-XX`
-2. Subir todos os entregáveis
+## 📝 Code Review (por Fase)
+Ao final de cada fase:
+1. Criar uma branch (ex.: `fase-01`)
+2. Subir os entregáveis
 3. Abrir Pull Request para `main`
 4. Preencher o template do PR com o que aprendeu e dúvidas
 5. Aguardar review do mentor
@@ -89,11 +83,10 @@ Ao final de cada semana:
 > ⚠️ A branch padrão é `main` (a antiga `master` foi removida).
 
 ## 🔗 Recursos Úteis
-
 - [Documentação Oficial do C#](https://learn.microsoft.com/pt-br/dotnet/csharp/)
 - [Balta.io - Fundamentos do C#](https://balta.io/)
 - [Exercism - C# Track](https://exercism.org/tracks/csharp)
 
 ---
 
-*Plano criado em: 29 de agosto de 2026*
+*Curso em construção — Fase 00 concluída.*

@@ -11,10 +11,6 @@
 - As fases são **sequenciais**: faça na ordem. Ao final de cada fase, entregue o desafio por PR.
 - Repositório é fonte do portal de estudos (`portal-estudos-csharp`), que espelha as lições/exercícios.
 
-> **Status da reestruturação:** as pastas legadas `Semana-01..04` ainda contêm conteúdo
-> parcial (tipos/memória, OO/SOLID, coleções/LINQ, ASP.NET). Elas serão **absorvidas** nas
-> fases correspondentes (ver mapa no fim). Conteúdo novo nasce já no formato de fases.
-
 ---
 
 ## Trilha resumida
@@ -54,7 +50,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ## Fase 01 — C# Básico: a linguagem em profundidade
 **Objetivo:** dominar tipos, memória e a sintaxe moderna do C#. **Entregável:** console + testes.
 
-- 01.1 Tipos por valor vs referência, stack/heap, boxing/unboxing *(absorve Semana-01)*
+- 01.1 Tipos por valor vs referência, stack/heap, boxing/unboxing
 - 01.2 `string` em profundidade, `StringBuilder`, cultura e formatação
 - 01.3 Números: `decimal` para dinheiro, arredondamento, `Math`
 - 01.4 Coleções fundamentais: `List<T>`, `Dictionary<K,V>`, `HashSet<T>`, `Stack`/`Queue`
@@ -68,7 +64,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ---
 
 ## Fase 02 — Programação Orientada a Objetos + SOLID
-**Objetivo:** modelar domínios com OO e aplicar SOLID na prática. *(absorve Semana-02)*
+**Objetivo:** modelar domínios com OO e aplicar SOLID na prática.
 
 - 02.1 Classes e objetos; encapsulamento; propriedades com validação
 - 02.2 Herança, `virtual`/`override`, classes abstratas
@@ -82,7 +78,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ---
 
 ## Fase 03 — Coleções avançadas, Delegados, Eventos, Generics e LINQ
-**Objetivo:** escrever código declarativo e reutilizável. *(absorve Semana-03)*
+**Objetivo:** escrever código declarativo e reutilizável.
 
 - 03.1 Generics (classes, métodos, restrições)
 - 03.2 Delegates, `Func`/`Action`, lambdas, closures
@@ -124,7 +120,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ---
 
 ## Fase 06 — Aplicações Web e Serviços
-**Objetivo:** construir APIs reais. *(absorve Semana-04)*
+**Objetivo:** construir APIs reais.
 
 - 06.1 HTTP/REST na prática (`HttpClient`)
 - 06.2 Minimal APIs e Controllers; validação; Swagger/OpenAPI
@@ -143,22 +139,6 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 - 07.3 Generics avançados, `System.Text` e `Regex` performático
 - 07.4 Source generators e metaprogramação
 - 07.5 Estudo de benchmarks (`BenchmarkDotNet`) e profiling
-
----
-
-## Mapa de absorção do conteúdo legado
-
-| Pasta legada | Conteúdo | Destino no novo currículo |
-|--------------|----------|----------------------------|
-| `Semana-01/aplicacao` (ControleEstoque) | tipos/memória/boxing | Fase 01 |
-| `Semana-01/teoria` | stack-heap, valor/referência | Fase 01 |
-| `Semana-02/aplicacao` (ValidadorFormulario) | OO + SOLID | Fase 02 |
-| `Semana-03/aplicacao` (AnaliseDados) | coleções + LINQ | Fase 03 |
-| `Semana-04/aplicacao` (APIControleEstoque) | ASP.NET | Fase 06 |
-
-> O conteúdo antigo será **movido/enriquecido** para as fases correspondentes em uma
-> etapa de reconciliação posterior (mantendo testes verdes). As fases `00` e `01..` novas
-> já são escritas no novo formato.
 
 ---
 

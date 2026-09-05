@@ -2,7 +2,7 @@ name: CI
 
 # Valida build e testes em cada push/PR para a main.
 # É um repositório de estudos com code review via PR: o CI garante que
-# os entregáveis das 4 semanas compilam e passam nos testes automaticamente,
+# os entregáveis de todas as fases compilam e passam nos testes automaticamente,
 # para que o revisor se concentre na qualidade do código.
 on:
   push:

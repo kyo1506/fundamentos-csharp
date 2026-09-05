@@ -1,4 +1,4 @@
-## Semana X — [Tema da Semana]
+## Fase X — [Tema da Fase]
 
 ### 📚 O que estudei
 
@@ -14,8 +14,8 @@
 
 - [ ] `/teoria/` — anotações teóricas
 - [ ] `/praticas/` — exemplos práticos contextualizados
-- [ ] `/aplicacao/` — projeto integrador da semana
-- [ ] `/desafios-semanais/` — exercícios resolvidos
+- [ ] `/aplicacao/` — projeto integrador da fase
+- [ ] `/desafios-da-fase/` — exercícios resolvidos
 
 ### ✅ Testes realizados
 
@@ -24,7 +24,7 @@
 - [ ] Testei com dados inválidos (edge cases)
 - [ ] Testei cenários de erro (exceções)
 
-### 🎯 Desafio da semana
+### 🎯 Desafio da fase
 
 **Exercício escolhido:** [Fácil / Médio / Desafio]
 
