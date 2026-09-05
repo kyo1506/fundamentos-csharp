@@ -33,22 +33,21 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ---
 
 ## Fase 00 — Fundamentos da Programação (lógica com C#)
-**Objetivo:** aprender a *pensar* como programador e os blocos básicos da linguagem, sem pressupor experiência. **Entregável:** console com exercícios de lógica resolvidos + testes.
+**Objetivo:** aprender a *pensar* como programador e os blocos básicos da linguagem, sem pressupor experiência. **Entregável:** `LogicaEmAcao` (menu de exercícios) + testes xUnit. **Status: concluída** (pronta para revisão).
 
 - **00.1** O que é programar — algoritmo, linguagem, compilação (C# → IL → executável)
-- **00.2** Preparando o ambiente — instalar .NET, `dotnet new/run/build`, VS Code/Rider, terminal
-- **00.3** Estrutura de um programa C# — `Program`, instruções, comentários
-- **00.4** Variáveis e tipos básicos — `int, double, decimal, bool, char, string`; inferência `var`; constantes
-- **00.5** Entrada e saída — `Console.WriteLine/ReadLine`, interpolação `$""`, formatação de números
-- **00.6** Operadores — aritmética, comparação, lógica, atribuição, precedência
-- **00.7** Decisões — `if/else`, `switch`, expressões condicionais
-- **00.8** Laços — `for`, `while`, `do-while`, `foreach`; `break`/`continue`
-- **00.9** Vetores (arrays) e `string` (métodos básicos)
-- **00.10** Funções/métodos — parâmetros, retorno, escopo, parâmetros opcionais/nomeados
-- **00.11** Depuração e erros comuns — ler stack trace, usar o debugger, testes de mesa
-- **00.12** Lógica de programação — exercícios clássicos (FizzBuzz, pares/ímpares, soma de dígitos, primo, fatorial, reverter string, jogo de adivinhação)
+- **00.2** Preparando o ambiente — instalar .NET, `dotnet new/run/build`, editor
+- **00.3** Estrutura de um programa C# e **variáveis/tipos** básicos (`int, decimal, bool, string`, `var`, constantes)
+- **00.4** Entrada e saída — `Console`, interpolação `$""`, `TryParse`, formatação/cultura
+- **00.5** Operadores — aritmética, comparação, lógica, atribuição, precedência
+- **00.6** Decisões — `if/else`, `switch` clássico e **switch de expressão**
+- **00.7** Laços — `for`, `while`, `do-while`, `foreach`; `break`/`continue`
+- **00.8** Vetores (arrays) e `string` (métodos, imutabilidade, comparação)
+- **00.9** Funções/métodos — parâmetros, retorno, escopo, função pura, organização
+- **00.10** Depuração e erros comuns — stack trace, debugger, teste de mesa
+- **00.11** Lógica de programação — exercícios clássicos (FizzBuzz, dígitos, Fibonacci, primos, vogais, ordenação) no projeto integrador
 
-**Projeto integrador (Fase 00):** `LógicaEmAção` — um menu de exercícios de lógica com funções puras testadas (xUnit).
+**Projeto integrador (Fase 00):** `LogicaEmAcao` — menu com os exercícios de lógica; funções puras em `Logica.cs` cobertas por testes.
 
 ---
 
