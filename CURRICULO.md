@@ -48,7 +48,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ---
 
 ## Fase 01 — C# Básico: a linguagem em profundidade
-**Objetivo:** dominar tipos, memória e a sintaxe moderna do C#. **Entregável:** console + testes.
+**Objetivo:** dominar tipos, memória e a sintaxe moderna do C#. **Entregável:** `CSharpBasico` (menu de demonstração) + testes xUnit. **Status: concluída** (pronta para revisão).
 
 - 01.1 Tipos por valor vs referência, stack/heap, boxing/unboxing
 - 01.2 `string` em profundidade, `StringBuilder`, cultura e formatação

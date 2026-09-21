@@ -6,4 +6,11 @@
   <Folder Name="/Fase-00-Fundamentos-da-Programacao/aplicacao/">
     <Project Path="Fase-00-Fundamentos-da-Programacao/aplicacao/LogicaEmAcao.csproj" />
   </Folder>
+  <Folder Name="/Fase-01-CSharp-Basico/" />
+  <Folder Name="/Fase-01-CSharp-Basico/aplicacao.Tests/">
+    <Project Path="Fase-01-CSharp-Basico/aplicacao.Tests/CSharpBasico.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-01-CSharp-Basico/aplicacao/">
+    <Project Path="Fase-01-CSharp-Basico/aplicacao/CSharpBasico.csproj" />
+  </Folder>
 </Solution>
