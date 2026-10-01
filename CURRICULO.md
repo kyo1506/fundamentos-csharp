@@ -78,7 +78,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ---
 
 ## Fase 03 — Coleções avançadas, Delegados, Eventos, Generics e LINQ
-**Objetivo:** escrever código declarativo e reutilizável.
+**Objetivo:** escrever código declarativo e reutilizável. **Entregável:** `CourseAnalytics` (análise de dados com LINQ, generics e eventos) + testes xUnit. **Status: concluída** (pronta para revisão).
 
 - 03.1 Generics (classes, métodos, restrições)
 - 03.2 Delegates, `Func`/`Action`, lambdas, closures
@@ -87,7 +87,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 - 03.5 LINQ aplicado (agregações, projeções, agrupamentos)
 - 03.6 Coleções do mundo real: filas/prioridade, `IEnumerable`/`IEnumerator`
 
-**Projeto integrador (Fase 03):** análise de dados com LINQ + testes.
+**Projeto integrador (Fase 03):** `CourseAnalytics`: motor de inteligência analítica com repositório genérico, pipeline de eventos `EventHandler`, agregações `GroupBy`/`Aggregate` e streaming com `yield return` + testes unitários xUnit.
 
 ---
 

@@ -20,4 +20,11 @@
   <Folder Name="/Fase-02-POO-SOLID/aplicacao/">
     <Project Path="Fase-02-POO-SOLID/aplicacao/PooSolid.csproj" />
   </Folder>
+  <Folder Name="/Fase-03-Colecoes-Linq/" />
+  <Folder Name="/Fase-03-Colecoes-Linq/aplicacao.Tests/">
+    <Project Path="Fase-03-Colecoes-Linq/aplicacao.Tests/CourseAnalytics.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-03-Colecoes-Linq/aplicacao/">
+    <Project Path="Fase-03-Colecoes-Linq/aplicacao/CourseAnalytics.csproj" />
+  </Folder>
 </Solution>
