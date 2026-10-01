@@ -13,4 +13,11 @@
   <Folder Name="/Fase-01-CSharp-Basico/aplicacao/">
     <Project Path="Fase-01-CSharp-Basico/aplicacao/CSharpBasico.csproj" />
   </Folder>
+  <Folder Name="/Fase-02-POO-SOLID/" />
+  <Folder Name="/Fase-02-POO-SOLID/aplicacao.Tests/">
+    <Project Path="Fase-02-POO-SOLID/aplicacao.Tests/PooSolid.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-02-POO-SOLID/aplicacao/">
+    <Project Path="Fase-02-POO-SOLID/aplicacao/PooSolid.csproj" />
+  </Folder>
 </Solution>

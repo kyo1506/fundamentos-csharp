@@ -64,7 +64,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 ---
 
 ## Fase 02 — Programação Orientada a Objetos + SOLID
-**Objetivo:** modelar domínios com OO e aplicar SOLID na prática.
+**Objetivo:** modelar domínios com OO e aplicar SOLID na prática. **Entregável:** `PooSolid` (gestão de matrículas com POO + SOLID) + testes xUnit. **Status: concluída** (pronta para revisão).
 
 - 02.1 Classes e objetos; encapsulamento; propriedades com validação
 - 02.2 Herança, `virtual`/`override`, classes abstratas
@@ -73,7 +73,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 - 02.5 SRP, OCP, LSP, ISP, DIP — cada princípio com exemplo + anti-exemplo
 - 02.6 Interfaces segregadas e injeção por construtor (visão inicial de DI)
 
-**Projeto integrador (Fase 02):** sistema com domínio modelado por OO + validações + testes (ex.: matrícula/participantes).
+**Projeto integrador (Fase 02):** `PooSolid`: sistema com domínio acadêmico (alunos, cursos, matrículas, policies de desconto, repositórios e notificações segregadas com injeção de dependência) + testes unitários xUnit.
 
 ---
 
