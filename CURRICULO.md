@@ -106,16 +106,16 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 
 ---
 
-## Fase 05 — Arquitetura, Padrões, DI e Testes
-**Objetivo:** escrever software testável e bem-estruturado.
+## Fase 05: Arquitetura, Padrões, DI e Testes
+**Objetivo:** escrever software testável e bem-estruturado. **Entregável:** `GestaoAcademica.Core` (núcleo corporativo com Clean Architecture, Patterns, DI e Decorators) + testes unitários xUnit com TDD. **Status: concluída** (pronta para revisão).
 
 - 05.1 SOLID aplicado em arquitetura em camadas
-- 05.2 Design patterns: Strategy, Factory, Repository, Observer, etc.
-- 05.3 Injeção de Dependência (Microsoft.Extensions.DependencyInjection)
-- 05.4 Testes: xUnit (Facts/Theory), TDD, mocks/fakes
-- 05.5 Qualidade: code review, git/PR, CI
+- 05.2 Design patterns: Strategy, Factory, Repository, Decorator e Observer
+- 05.3 Injeção de Dependência (`Microsoft.Extensions.DependencyInjection`)
+- 05.4 Testes: xUnit (Facts/Theories) e prática de TDD
+- 05.5 Qualidade: dublês de teste (Fakes/Mocks), code review, PR e cobertura
 
-**Projeto integrador (Fase 05):** biblioteca + suíte de testes TDD com cobertura.
+**Projeto integrador (Fase 05):** `GestaoAcademica.Core`: biblioteca de regras de negócio acadêmicas desenvolvida com TDD, separação estrita de camadas, repositórios em memória, políticas Strategy de desconto, padrão Decorator para telemetria e extensão de DI + 21 testes unitários xUnit.
 
 ---
 

@@ -34,4 +34,11 @@
   <Folder Name="/Fase-04-Runtime-BCL/aplicacao/">
     <Project Path="Fase-04-Runtime-BCL/aplicacao/RelatoriosAsyncCli.csproj" />
   </Folder>
+  <Folder Name="/Fase-05-Arquitetura-Testes/" />
+  <Folder Name="/Fase-05-Arquitetura-Testes/aplicacao.Tests/">
+    <Project Path="Fase-05-Arquitetura-Testes/aplicacao.Tests/GestaoAcademica.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-05-Arquitetura-Testes/aplicacao/">
+    <Project Path="Fase-05-Arquitetura-Testes/aplicacao/GestaoAcademica.Core.csproj" />
+  </Folder>
 </Solution>
