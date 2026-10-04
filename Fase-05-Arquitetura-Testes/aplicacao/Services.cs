@@ -14,7 +14,7 @@ public class MatriculaService : IMatriculaService
     private readonly IMatriculaRepository _matriculaRepository;
     private readonly IPoliticaDesconto _politicaDesconto;
     private readonly TimeProvider _timeProvider;
-    private int _proximoIdMatricula = 1;
+    private static int _proximoIdMatricula = 1;
 
     public MatriculaService(
         IAlunoRepository alunoRepository,

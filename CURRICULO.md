@@ -119,15 +119,17 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 
 ---
 
-## Fase 06 — Aplicações Web e Serviços
-**Objetivo:** construir APIs reais.
+## Fase 06: Aplicações Web e Serviços
+**Objetivo:** construir APIs reais. **Entregável:** `GestaoAcademica.WebApi` (Web API com Minimal APIs, EF Core, autenticação JWT, ProblemDetails e health checks) + testes de integração com `WebApplicationFactory`. **Status: concluída** (pronta para revisão).
 
-- 06.1 HTTP/REST na prática (`HttpClient`)
-- 06.2 Minimal APIs e Controllers; validação; Swagger/OpenAPI
-- 06.3 Middleware e ciclo de vida da requisição
-- 06.4 Acesso a dados com EF Core (SQLite/Postgres) e migrações
-- 06.5 Autenticação/autorização básica (JWT)
-- 06.6 Publicação e deploy (containers, Railway/Render/Azure)
+- 06.1 HTTP/REST na prática (`HttpClient` e `IHttpClientFactory`)
+- 06.2 Minimal APIs modernas, `TypedResults`, filtros e OpenAPI
+- 06.3 Middleware, ciclo de vida e ProblemDetails (RFC 7807)
+- 06.4 Acesso a dados com EF Core (`DbContext`, Fluent API e migrações)
+- 06.5 Autenticação e autorização com tokens JWT
+- 06.6 Publicação, Docker multi-stage e health checks (`/healthz`)
+
+**Projeto integrador (Fase 06):** `GestaoAcademica.WebApi`: Web API RESTful construída com ASP.NET Core Minimal APIs que integra os casos de uso de matrícula e cursos da Fase 05, persistência em memória/SQLite com Entity Framework Core, segurança JWT e endpoints documentados + 9 testes de integração com `WebApplicationFactory`.
 
 ---
 

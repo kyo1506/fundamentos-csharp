@@ -41,4 +41,11 @@
   <Folder Name="/Fase-05-Arquitetura-Testes/aplicacao/">
     <Project Path="Fase-05-Arquitetura-Testes/aplicacao/GestaoAcademica.Core.csproj" />
   </Folder>
+  <Folder Name="/Fase-06-Aplicacoes-Web/" />
+  <Folder Name="/Fase-06-Aplicacoes-Web/aplicacao.Tests/">
+    <Project Path="Fase-06-Aplicacoes-Web/aplicacao.Tests/GestaoAcademica.WebApi.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-06-Aplicacoes-Web/aplicacao/">
+    <Project Path="Fase-06-Aplicacoes-Web/aplicacao/GestaoAcademica.WebApi.csproj" />
+  </Folder>
 </Solution>
