@@ -133,7 +133,7 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 
 ---
 
-## Fase 07 — Tópicos Avançados & Performance
+## Fase 07: Tópicos Avançados & Performance
 **Objetivo:** alicerces para nível sênior.
 
 - 07.1 Performance: alocação, `Span<T>`/`Memory<T>`, `ref struct`
@@ -141,6 +141,8 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 - 07.3 Generics avançados, `System.Text` e `Regex` performático
 - 07.4 Source generators e metaprogramação
 - 07.5 Estudo de benchmarks (`BenchmarkDotNet`) e profiling
+
+**Projeto integrador (Fase 07):** `AltaPerformance.Core`: motor de streaming e processamento concorrente baseado em `System.Threading.Channels` com controle de backpressure, tokenização e parsing de telemetria zero-allocation com `ReadOnlySpan<char>` e `ref struct`, expressões regulares com `[GeneratedRegex]` e otimização com `SearchValues<char>` + 20 testes unitários em `AltaPerformance.Tests`.
 
 ---
 

@@ -48,4 +48,11 @@
   <Folder Name="/Fase-06-Aplicacoes-Web/aplicacao/">
     <Project Path="Fase-06-Aplicacoes-Web/aplicacao/GestaoAcademica.WebApi.csproj" />
   </Folder>
+  <Folder Name="/Fase-07-Topicos-Avancados-Performance/" />
+  <Folder Name="/Fase-07-Topicos-Avancados-Performance/aplicacao.Tests/">
+    <Project Path="Fase-07-Topicos-Avancados-Performance/aplicacao.Tests/AltaPerformance.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-07-Topicos-Avancados-Performance/aplicacao/">
+    <Project Path="Fase-07-Topicos-Avancados-Performance/aplicacao/AltaPerformance.Core.csproj" />
+  </Folder>
 </Solution>
