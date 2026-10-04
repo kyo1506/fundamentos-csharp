@@ -27,4 +27,11 @@
   <Folder Name="/Fase-03-Colecoes-Linq/aplicacao/">
     <Project Path="Fase-03-Colecoes-Linq/aplicacao/CourseAnalytics.csproj" />
   </Folder>
+  <Folder Name="/Fase-04-Runtime-BCL/" />
+  <Folder Name="/Fase-04-Runtime-BCL/aplicacao.Tests/">
+    <Project Path="Fase-04-Runtime-BCL/aplicacao.Tests/RelatoriosAsyncCli.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-04-Runtime-BCL/aplicacao/">
+    <Project Path="Fase-04-Runtime-BCL/aplicacao/RelatoriosAsyncCli.csproj" />
+  </Folder>
 </Solution>

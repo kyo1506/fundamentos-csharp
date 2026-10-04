@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Fase04.RelatoriosAsyncCli</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Fase-02-POO-SOLID\aplicacao\PooSolid.csproj" />
+    <ProjectReference Include="..\..\Fase-03-Colecoes-Linq\aplicacao\CourseAnalytics.csproj" />
+  </ItemGroup>
+
+</Project>

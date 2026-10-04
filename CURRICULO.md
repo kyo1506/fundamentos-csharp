@@ -91,18 +91,18 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 
 ---
 
-## Fase 04 — .NET Runtime & BCL: exceções, IO, JSON, threads e async
-**Objetivo:** entender como o .NET executa e usar recursos do runtime de verdade.
+## Fase 04: .NET Runtime & BCL: exceções, IO, JSON, threads e async
+**Objetivo:** entender como o .NET executa e usar recursos do runtime de verdade. **Entregável:** `RelatoriosAsyncCli` (processador concorrente assíncrono de relatórios com Streams, JSON e Source Generators) + testes xUnit. **Status: concluída** (pronta para revisão).
 
 - 04.1 Garbage Collector, `IDisposable`, `using`, finalizers
 - 04.2 IO: `File`, `Stream`, `Directory`; ler/escrever texto, CSV
-- 04.3 Serialização `System.Text.Json`
-- 04.4 Threads e `Task`; `async/await`; `Task.WhenAll`/`WhenAny`; canais e fluxos assíncronos
-- 04.5 `DateTime`, cultura e globalização
-- 04.6 Reflection e `Attribute`
-- 04.7 Configuração e `Microsoft.Extensions.*` (visão)
+- 04.3 Serialização `System.Text.Json` e Source Generators
+- 04.4 Threads e `Task`; `async/await`; `Task.WhenAll`/`WhenAny`; cancelamento com `CancellationToken`
+- 04.5 `DateTime`, `DateTimeOffset`, cultura e `TimeProvider`
+- 04.6 Reflection e `Attribute` customizado
+- 04.7 Configuração e logging com `Microsoft.Extensions.*`
 
-**Projeto integrador (Fase 04):** CLI que lê arquivo, processa com async e gera relatório (JSON/CSV).
+**Projeto integrador (Fase 04):** `RelatoriosAsyncCli`: motor de processamento assíncrono de relatórios com limites de concorrência (`SemaphoreSlim`), serialização de streams com Source Generators (`RelatorioJsonContext`), exportação CSV com Reflection e cancelamento cooperativo + testes unitários xUnit.
 
 ---
 
