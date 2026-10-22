@@ -55,4 +55,11 @@
   <Folder Name="/Fase-07-Topicos-Avancados-Performance/aplicacao/">
     <Project Path="Fase-07-Topicos-Avancados-Performance/aplicacao/AltaPerformance.Core.csproj" />
   </Folder>
+  <Folder Name="/Fase-08-Arquitetura-Distribuida-Mensageria/" />
+  <Folder Name="/Fase-08-Arquitetura-Distribuida-Mensageria/aplicacao.Tests/">
+    <Project Path="Fase-08-Arquitetura-Distribuida-Mensageria/aplicacao.Tests/EventBus.Distribuido.Tests.csproj" />
+  </Folder>
+  <Folder Name="/Fase-08-Arquitetura-Distribuida-Mensageria/aplicacao/">
+    <Project Path="Fase-08-Arquitetura-Distribuida-Mensageria/aplicacao/EventBus.Distribuido.Core.csproj" />
+  </Folder>
 </Solution>

@@ -146,6 +146,19 @@ Fase 07  Tópicos Avançados & Performance                        → Lib + Benc
 
 ---
 
+## Fase 08: Arquitetura Distribuida e Mensageria (Event-Driven)
+**Objetivo:** dominar arquiteturas orientadas a eventos, resiliencia e consistencia eventual em microsservicos com .NET 10.
+
+- 08.1 Sistemas Distribuidos e Comunicacao Assincrona
+- 08.2 Mensageria, Message Brokers e Event Bus
+- 08.3 Padrao Outbox Transacional
+- 08.4 Idempotencia e Desduplicacao de Mensagens
+- 08.5 Padrao Saga e Transacoes Compensatorias
+
+**Projeto integrador (Fase 08):** `EventBus.Distribuido.Core`: barramento de eventos desacoplado em memoria, implementacao do padrao Outbox Transacional com despachante assincrono, middleware decorator para processamento estritamente idempotente de mensagens e coordenador de Saga com transacoes compensatorias automaticas + 6 testes automatizados em `EventBus.Distribuido.Tests`.
+
+---
+
 ## Critérios de qualidade por aula
 Cada aula deve ter, quando aplicável:
 1. **Conceito** explicado com analogia e precisão técnica.
