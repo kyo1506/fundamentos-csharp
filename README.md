@@ -1,6 +1,10 @@
-# Fundamentos do C# (.NET) — Curso Guiado do Básico ao Avançado
+# Fundamentos do C# (.NET): Curso Guiado do Básico ao Avançado
 
-> Curso de programação em C# e .NET do zero ao avançado, organizado em **Fases**.
+> 🎯 **Você está na branch `starter` (Branch de Prática do Estudante)**
+> Esta branch é o seu ponto de partida para codificar na prática via TDD. As assinaturas dos métodos e classes estão criadas e as suítes de testes xUnit já estão configuradas, aguardando pela sua implementação.
+> - **Seu desafio:** execute `dotnet test` e vá implementando o código até que todos os testes passem (fiquem verdes)!
+> - **Gabarito e Solução do Instrutor:** para consultar o projeto completamente resolvido ou comparar sua solução, consulte a branch `main`.
+
 > Veja o roadmap completo em [`CURRICULO.md`](CURRICULO.md).
 
 ## 📋 Sobre o Projeto
