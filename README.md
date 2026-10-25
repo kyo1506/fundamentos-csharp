@@ -23,6 +23,14 @@ para code review.
 
 ## 🚀 Como Usar
 
+### 🎯 Como Praticar (Branch Starter vs Main)
+- **Branch `starter`:** ponto de partida prático para o estudante. Contém as assinaturas e testes unitários xUnit configurados aguardando implementação (desenvolvimento guiado por testes: TDD). Para iniciar a prática:
+  ```bash
+  git checkout starter
+  dotnet test
+  ```
+- **Branch `main`:** referência canônica e gabarito oficial com todas as soluções implementadas pelo instrutor.
+
 ### Pré-requisitos
 - [.NET 10 SDK](https://dotnet.microsoft.com/download)
 - Editor: [VS Code](https://code.visualstudio.com/), [Rider](https://www.jetbrains.com/rider/) ou Visual Studio
